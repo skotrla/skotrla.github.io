@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths tablesaw-enhanced" lang="en">
+<!-- Mirrored from www.kotrlas.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jul 2021 22:30:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
+</style><link type="text/css" rel="stylesheet" href="index_files/css_003.css"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
+</style><style>.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
+</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
+    <meta charset="utf-8"><script type="text/javascript" src="index_files/7a4aacbf1e"></script><script type="text/javascript" async="" src="index_files/widget.js"></script><script src="index_files/nr-spa-1208.js"></script><script type="text/javascript" async="" src="index_files/conversion_async.js"></script><script type="text/javascript" async="" src="index_files/analytics.js"></script><script type="text/javascript" async="" src="index_files/analytics.js"></script><script type="text/javascript" async="" src="index_files/js"></script><script type="text/javascript" async="" src="index_files/js_003"></script><script type="text/javascript" async="" src="index_files/linkid.js"></script><script src="index_files/251417235388461.js" async=""></script><script async="" src="index_files/fbevents.js"></script><script type="text/javascript" async="" src="index_files/mixpanel-2-latest.js"></script><script async="" src="index_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"7a4aacbf1e","applicationID":"6010591","transactionName":"MlBTZxRWXkpTVBVbWQsafGUlGHhWX1IiXVgRR15fClJCFntZBVdO","queueTime":0,"applicationTime":132,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg8EWFJWGwUAVVFXDgA=",licenseKey:"7a4aacbf1e",applicationID:"6010591"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(28),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{l?l-=1:o(c||new UncaughtException(t,e,n),!0)}catch(u){try{i("ierr",[u,s.now(),!0])}catch(d){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(29),c=t("ee"),s=t("loader"),u=t("gos"),f=window.onerror,d=!1,p="nr@seenError",l=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(l+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(u(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){L++,T=g.hash,this[f]=y.now()}function o(){L--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[f],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",u="-body",f="fn"+c,d="fn"+s,p="cb"+c,l="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),P=t(14),M=t(9),S=t("ee"),C=S.get("tracer");t(16),y.features.spa=!0;var T,L=0;S.on(f,r),b.on(p,r),M.on(p,r),S.on(d,o),b.on(l,o),M.on(l,o),S.buffer([f,d,"xhr-done","xhr-resolved"]),R.buffer([f]),O.buffer(["setTimeout"+s,"clearTimeout"+c,f]),P.buffer([f,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+u+c,m+u+s]),E.buffer(["newURL"]),x.buffer([f]),b.buffer(["propagate",p,l,"executor-err","resolve"+c]),C.buffer([f,"no-"+f]),M.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(P,"send-xhr"+c),a(S,"xhr-resolved"),a(S,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(M,"new-jsonp"),a(M,"jsonp-end"),a(M,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,L>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",u="addEventListener",f="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u in window.performance&&(window.performance["c"+s]?window.performance[u](f,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[u]("webkit"+f,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[u]("scroll",r,{passive:!0}),document[u]("keypress",r,!1),document[u]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(f);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[f,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),u=XMLHttpRequest,f="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(u.prototype)):u.prototype.hasOwnProperty(f)&&(o(window),o(u.prototype)),a.on(f+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(29),a=t(28);e.exports=o;var c=window,s="fetch-",u=s+"body-",f=["arrayBuffer","blob","json","text","formData"],d=c.Request,p=c.Response,l=c.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(f,function(t,e){r(d[h],e,u),r(p[h],e,u)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var f=c(a),d="function"==typeof f.parent[f.key];if(d){var p={};u.inPlace(f.parent,[f.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(f);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),u=t("wrap-function")(s);if(e.exports=s,o()){var f=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?u.inPlace(Node.prototype,l,"dom-"):(u.inPlace(HTMLElement.prototype,l,"dom-"),u.inPlace(HTMLHeadElement.prototype,l,"dom-"),u.inPlace(HTMLBodyElement.prototype,l,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=i.context(),n=c(t,"executor-",e,null,!1),r=new u(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,c=o(i),s=t(28),u=NREUM.o.PR;e.exports=i,u&&(window.Promise=r,["all","race"].forEach(function(t){var e=u[t];u[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(u,arguments),c=u.resolve(a);return c}}),["resolve","reject"].forEach(function(t){var e=u[t];u[t]=function(t){var n=e.apply(u,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),u.prototype["catch"]=function(t){return this.then(null,t)},u.prototype=Object.create(u.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(u),function(t,e){try{r[e]=u[e]}catch(n){}}),o.wrapInPlace(u.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=c(n[0],"cb-",r,null,!1),n[1]=c(n[1],"cb-",r,null,!1);var s=t.apply(this,n);return r.nextPromise=s,i.emit("propagate",[e,!0],s,!1,!1),s}}),i.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this,null,!1),t[1]=c(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+u})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",u="clearTimeout",f="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[u,"clearImmediate"],u+d),i.on(s+f,r),i.on(c+f,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=f.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,f.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var u=t("ee"),f=u.get("xhr"),d=t("wrap-function")(f),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=f;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{f.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}return e};if(s(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),f.on("send-xhr-start",function(t,e){r(t,e),i(e)}),f.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else u.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,u=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,u)),(t.sameOrigin&&!f()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,u)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",u="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+u+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return u()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(25),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(17),u=t(15).generateTracePayload,f=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(21),m=t(20),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=u(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<p;c++)e.addEventListener(d[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),f.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=u(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("index.html")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(20);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[u.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(28),c=t(29),s=t("ee").get("tracer"),u=t("loader"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),f.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[u.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[u.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,u.now(),!1,e])}},{}],20:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],21:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],22:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(30);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],23:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],24:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,u,f,d=t("handle"),p=t("loader"),l=t(27),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}l(c)}},{}],25:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],26:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],27:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],28:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],29:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],30:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,s,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var c=e(o),s=m(n),u=s.length,f=0;f<u;f++)s[f].apply(c,r);var p=d[y[n]];return p&&p.push([x,n,r,c]),c}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:c,aborted:!1};return x}function i(t){return u(t,s,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var s="nr@context",u=t("gos"),f=t(28),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();s(y,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}var a=t(22),c=t("handle"),s=t(28),u=t("ee"),f=t(26),d=t(23),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1208.min.js"},x=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:a.getLastTimestamp(),now:a,origin:g,features:{},xhrWrappable:x,userAgent:f};t(19),t(24),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,s,u){function nrWrapper(){var i,a,f,p;try{a=this,i=d(arguments),f="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,s],f],t)}c(n+"start",[i,a,s],f,u);try{return p=e.apply(a,i)}catch(h){throw c(n+"err",[i,a,h],f,u),h}finally{c(n+"end",[i,a,p],f,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var c,s,u,f="-"===r.charAt(0);for(u=0;u<e.length;u++)s=e[u],c=t[s],a(c)||(t[s]=n(c,f?s+r:r,o,s,i))}function c(n,r,i,a){if(!h||e){var c=h;h=!0;try{t.emit(n,r,i,e,a)}catch(s){o([s,n,r,i],t)}h=c}}return t||(t=f),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=f);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,i(t,n,f),n}function s(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var f=t("ee"),d=t(29),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=s,e.exports.argsToArray=u},{}]},{},["loader",2,16,5,3,4]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <!-- base href="https://scottk.centralmetro.com/" -->
+
+    <title>Central Metro Realty | Texas Real Estate Brokerage | Central Metro Realty</title>
+
+    <meta property="og:title" content="Central Metro Realty | Texas Real Estate Brokerage | Central Metro Realty">
+    <meta property="og:site_name" content="Central Metro Realty">
+    <meta property="og:type" content="article">
+    <link rel="shortcut icon" href="../s-static.cinccdn.com/img/favicon.png">
+        <link rel="canonical" href="https://www.centralmetro.com/">
+        <meta property="og:url" content="https://www.centralmetro.com">
+        <!-- scheme is http -->
+            <meta name="description" content="Search Texas real estate and speak with an agent today about your real estate needs. Central Metro Realty is a 100% commission brokerage serving the state of Texas.">
+        <meta property="og:description" content="Search Texas real estate and speak with an agent today about your real estate needs. Central Metro Realty is a 100% commission brokerage serving the state of Texas.">
+                <meta property="og:image" content="https://s-static.cinccdn.com/images/header/UPB529C62E333547.png">
+            <meta property="og:image" content="https://s-static.cinccdn.com/images/uploads/UP71ABCA9C38F24B.jpg">
+            <meta name="keywords" content="search homes in austin, austin texas homes, homes in austin texas, austin texas real estate, pflugerville homes, round rock homes, central metro realty, austin realty, austin real estate brokerages, Central Metro Realty, centralmetro.com, Jason Huval, 512-921-7537, homes for sale in Austin, Austin, Austin TX real estate, Austin homes, Austin homes for sale, Austin houses, Austin properties, Austin listings">
+    
+
+
+        <link href="index_files/css.css" rel="stylesheet" type="text/css">
+    <link href="index_files/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="index_files/icomoon.css" rel="stylesheet" type="text/css">
+
+    <link href="index_files/css_002.css" rel="stylesheet">
+
+
+        <link href="index_files/video_theme.css" rel="stylesheet" type="text/css">
+
+        <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+    </script>
+    <script type="text/javascript">
+        ga('create', 'UA-34319713-1', 'auto', { 'name': 'cinc' });
+        ga('cinc.require', 'linkid', 'linkid.html'); 
+
+        
+        ga('cinc.html', 'dimension1', '10');
+
+        
+        ga('cinc.html', 'dimension2', 'houses');
+
+        
+        ga('cinc.html', 'dimension3', 'scottk.centralmetro.com');
+
+        
+        ga('cinc.html', 'dimension4', 'Agent');
+
+        
+        ga('cinc.html', 'dimension5', 'Valid');
+
+        
+        ga('cinc.html', 'dimension6', 'Valid');
+
+        
+        ga('cinc.html', 'dimension7', '0');
+
+        
+        ga('cinc.html', 'dimension8', '1');
+
+        
+        ga('cinc.html', 'dimension9', '0');
+
+        
+        ga('cinc.html', 'dimension10', '0');
+
+        
+
+        
+        ga('cinc.html', 'dimension13', 'Pro');
+
+        ga('cinc.send', 'pageview');
+    </script>
+        <script type="text/javascript">
+            ga('cinc.html', 'userId', 'MM4355BEC981B24A5D85AE1CD8608F26B2');
+            ga('cinc.send', 'event', 'authentication', 'PageView','user-id available', { nonInteraction: true });
+        </script>
+
+        <!-- start Mixpanel -->
+    <script type="text/javascript">
+        (function (e, a) {
+            if (!a.__SV) {
+                var b = window; try { var c, l, i, j = b.location, g = j.hash; c = function (a, b) { return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null }; g && c(g, "state") && (i = JSON.parse(decodeURIComponent(c(g, "state"))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search))) } catch (m) { } var k, h; window.mixpanel = a; a._i = []; a.init = function (b, c, f) {
+                    function e(b, a) { var c = a.split("."); 2 == c.length && (b = b[c[0]], a = c[1]); b[a] = function () { b.push([a].concat(Array.prototype.slice.call(arguments, 0))) } }
+                    var d = a; "undefined" !== typeof f ? d = a[f] = [] : f = "mixpanel"; d.people = d.people || []; d.toString = function (b) { var a = "mixpanel"; "mixpanel" !== f && (a += "." + f); b || (a += " (stub)"); return a }; d.people.toString = function () { return d.toString(1) + ".people (stub)" }; k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (h = 0; h < k.length; h++)e(d, k[h]); a._i.push([b, c, f])
+                }; a.__SV = 1.2; b = e.createElement("script"); b.type = "text/javascript"; b.async = !0; b.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; c = e.getElementsByTagName("script")[0]; c.parentNode.insertBefore(b, c)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("5e3c63d5cdb7eac8fef9bd42212413f2");
+    </script>
+    <!-- end Mixpanel -->
+
+
+    
+
+        <script type="text/javascript">
+            window.lh = function (x, y, z) { };
+        </script>
+
+    <!-- Unconditional Preload Scripts -->
+    <script type="text/javascript" src="index_files/preload"></script>
+
+    <script>
+        CINC.BaseImageUrlTemplate = "//s-static.cinccdn.com/images/{0}/{1}";
+        window.History = window.History || {};
+        window.History.disabled = false;
+    </script>
+
+    
+    <!-- Facebook Pixel Code -->
+<script>
+    CINC = (typeof CINC === 'undefined' ? {} : CINC);
+
+    if (typeof fbq === 'undefined') {
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', '../connect.facebook.net/en_US/fbevents.js');
+    }
+    try {
+        fbq('dataProcessingOptions', ['LDU'], 0, 0);
+        // init the ids we need
+            fbq('init', '251417235388461');
+                fbq('trackSingle', '251417235388461', 'PageView');
+    }
+    catch (error) {
+        console.error(error);
+    }
+
+    // code to trigger events on show and hide of divs...
+    (function ($) {
+        $.each(['show', 'hide'], function (i, ev) {
+            var el = $.fn[ev];
+            $.fn[ev] = function () {
+                this.trigger(ev);
+                return el.apply(this, arguments);
+            };
+        });
+    })(jQuery);
+
+    // for initiateCheckout (we want the first page...)
+    $(document).one("show", ".js-signupform .js-signup-step[data-signup-step='1']", function () {
+        CINC.Facebook.SignupFormEvent();
+    });
+
+    // for purchase, we want any next page that is not the first one...
+    $(document).one("show", ".js-signupform .js-signup-step[data-signup-step!='1']", function () {
+        var propList = [];
+        var content = [];
+        var priceList = [];
+
+        if (CINC.SearchResults && CINC.SearchResults.length > 0) {
+            // we're on the search page...
+            var stop = 5;
+            if (stop > CINC.SearchResults.length) {
+                stop = CINC.SearchResults.length;
+            }
+            for (var i = 0; i < stop; i++) {
+                propList.push(CINC.SearchResults[i].pdid);
+                priceList.push(CINC.SearchResults[i].price);
+                content.push({ 'id': CINC.SearchResults[i].pdid, 'quantity': 1, 'item_price': CINC.SearchResults[i].price });
+            }
+        }
+        else if (CINC.Property && CINC.Property.pdid) {
+            // we're on a property details page...
+            propList.push(CINC.Property.pdid);
+            priceList.push(CINC.Property.price);
+            content.push({ 'id': CINC.Property.pdid, 'quantity': 1, 'item_price': CINC.Property.price });
+        }
+
+        if (propList.length > 0) {
+            // we were able to retrieve a property in some fashion, make the call to FB
+            CINC.Facebook.DARE.Purchase(propList, content, priceList);
+        }
+    });
+
+    CINC.Facebook = {
+        // DARE functions
+        DARE: {
+            ViewContent: function (propNumber, propPrice) {
+            },
+            Search: function (propList, city, region, country) {
+            },
+            InitiateCheckout: function (propList, price) {
+            },
+            Purchase: function (propList, content, propPrices) {
+            }
+        },
+
+        SignupFormEvent: function () {
+            var propList = [];
+            var price = 0;
+
+            if (CINC.SearchResults && CINC.SearchResults.length > 0) {
+                // we're on the search page...
+                var stop = 5;
+                if (stop > CINC.SearchResults.length) {
+                    stop = CINC.SearchResults.length;
+                }
+                for (var i = 0; i < stop; i++) {
+                    propList.push(CINC.SearchResults[i].pdid);
+                    price += CINC.SearchResults[i].price;
+                }
+            }
+            else if (CINC.Property && CINC.Property.pdid) {
+                // we're on a property details page...
+                propList.push(CINC.Property.pdid);
+                price += CINC.Property.price;
+            }
+
+            if (propList.length > 0) {
+                // we were able to retrieve a property in some fashion, make the call to FB
+                CINC.Facebook.DARE.InitiateCheckout(propList, price);
+            }
+        },
+
+        // conversion function
+        Conversion: function () {
+        },
+
+        // adress entered
+        SellerSuiteStep2: function () {
+                fbq('trackSingle', '251417235388461', 'SellerSuiteStep2');
+        },
+
+        // home value home details filled
+        SellerSuiteStep3: function () {
+                fbq('trackSingle', '251417235388461', 'SellerSuiteStep3');
+        }
+    };
+</script>
+<!-- End Facebook Pixel Code -->
+
+
+
+    <!-- Global site tag (gtag.js) - Google AdWords: 864125124 -->
+<script async="" src="index_files/js_002"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-89558649-7');
+    gtag('config', 'UA-77241913-1');
+    gtag('config', 'AW-864125124');
+</script>
+<!-- Event snippet for Lead conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-864125124/zWIeCP-xhm0QxIGGnAM',
+            'event_callback': callback
+        });
+        return false;
+    }
+</script><!-- Event snippet for Lead conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+                        <script>
+                            function gtag_report_conversion(url) {
+                                var callback = function() {
+                                    if (typeof(url) != 'undefined') {
+                                        window.location = url;
+                                    }
+                                };
+                                gtag('event', 'conversion', {
+                                    'send_to': 'AW-688367397/llj0CL_ky7YBEKXOnsgC',
+                                    'event_callback': callback
+                                });
+                                return false;
+                            }
+                        </script>
+    
+
+    
+
+    <style></style>
+<script src="index_files/a_002"></script><style type="text/css"></style><style>[data-columns]::before{display:block;visibility:hidden;position:absolute;font-size:1px;}</style><script type="text/javascript" charset="UTF-8" src="index_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="index_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="index_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="index_files/onion.js"></script><script src="index_files/a"></script><script type="text/javascript" charset="UTF-8" src="index_files/controls.js"></script><script type="text/javascript" charset="UTF-8" src="index_files/usage.js"></script></head>
+
+<body id="body">
+
+    
+            <p class="accessibility-message">If you need assistance, please call 512-921-7537</p>
+
+
+    
+
+
+
+
+        <div class="top-menu  js-top-menu">
+            <div class="grid grid__flex--gutter grid__2col grid__centered no-bottom-margin">
+                <div>
+                </div>
+        </div>
+            <div class="subdomain-info">
+                <div class="grid__inline no-collapse-mobile">
+                    <div class="agent-photo" style="width: 40px; background-image: url('../s-static.cinccdn.com/images/uploads/uploads/UP3B1D57E1EAB243.html');" width="40"></div>
+                    <div class="agent-name">Scott Kotrla</div>
+                    <div class="agent-phone">214-893-8175</div>
+                </div>
+            </div>
+        <header id="header" class="header-home js-header">
+            <div class="grid no-bottom-margin">
+                <div class="header-logo">
+                    <div class="">
+                                <a class="site-logo" href="index-2.html"><img src="index_files/UPB529C62E333547.png" alt="Central Metro Realty" style=""></a>
+                                <a class="site-logo" href="index-2.html"><img src="headshot.jpg" alt="Central Metro Realty" style="width:90px;height:144px;"></a>
+
+
+                    </div>
+                </div>
+                <div class="header-navigation">
+    <div class="pull-right"><a class="menu-button is-displayed-mobile" id="open-button">MENU</a></div>
+    <div id="nav" class="nav is-collapsed-mobile cl-effect-4">
+            <ul>
+ 			<li class="nav__item hidden-xs hidden-sm"><a href="index-2.html">Home</a></li>
+			<li class="nav__item hidden-xs hidden-sm"><a href="buyers.html">Buyers</a></li>
+			<li class="nav__item hidden-xs hidden-sm"><a href="sellers.html">Sellers</a></li>
+			<li class="nav__item hidden-xs hidden-sm"><a href="commissions.html">How Commissions Work</a></li>
+                        
+            </ul>
+    </div>
+</div>
+            </div>
+        </header>
+
+
+    <div id="st-container" class="st-container" style="">
+        <div class="content-wrap">
+
+
+            
+
+
+<style>
+    .customheaderone {
+        font-size: 3.15733em;
+        width: 80%;
+        color: white;
+        margin: auto;
+        margin-bottom: 16px;
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+        text-align: center;
+        font-weight: 400;
+        line-height: normal;
+    }
+</style>
+
+<div id="content" class="home-page">
+    
+<div class="hero" style="background: url('../s-static.cinccdn.com/images/uploads/UP71ABCA9C38F24B.jpg'); background-size:cover; ">
+    <div class="video-container">
+        <div class="hero-overlay" style="">
+            <div class="grid">
+                                <h1 style="text-shadow: 3px 3px 5px black;"></h1>
+                <div class="hero__subheading"></div>
+
+                <div class="grid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    
+
+
+    <section class="white">
+        <div class="grid">
+        </div>
+
+        <div class="grid">
+<p style="text-align: left;"><span style="color: #ef3e42; font-size: 18pt;"><span style="color: #222222; font-family: Arial, Helvetica, sans-serif;">
+I became a part-time real estate agent because I could not find a flat-fee agent in my area that offered a full suite of services without a full 3% commission.  I am now working on my broker's license because I could not find a brokerage that offered me the level of pricing flexibility for a la carte services that I would like to provide to my clients.  Because I'm part-time, I can afford to find clients exclusively through word-of-mouth referrals instead of paying for expensive marketing and referral fees.  To cover my costs, I need one transaction per year and to become a broker, I need 12 transactions over 4 years - I'm happy to help as many people as I can, but I don't need high volume or high fees to meet my goals or earn a living.
+<br><br>
+As a flat-fee agent, I will refund anything I receive above the negotiated fee, which varies depending on the level of service required.  Fees start at $2500 (paid at closing) for both buyers and sellers who only require remote services and increase depending upon the amount of in-person services required.  For full unlimited in-person support, my fee is 2%, which I am able to offer because I did extensive research to find a a flat-fee brokerage instead of a traditional broker, who typically gets 30%-50% of the standard buyer agent or listing agent 3% commission.
+<br><br>
+I look forward to working with you!
+<br><br>
+Scott Kotrla
+</span></p>
+                                <ul>
+                                    <li><a href="https://scottk.centralmetro.com/terms">Terms of Use</a></li>
+                                    <li><a href="https://scottk.centralmetro.com/privacy">Privacy Notice</a></li>
+                                        <li><a href="https://scottk.centralmetro.com/dmca">DMCA</a></li>
+                                                                        
+                                                                        
+    <li class="footer-li"><img class="footer-icon" src="index_files/equalhousinglogo_75.jpg" alt="Fair Housing/Equal Opportunity" title=" is an Equal Opportunity Employer and supports the Fair Housing Act"></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                    </footer>
+                        <section class="footer-disclaimer">
+                            <div class="grid">
+                                <div class="grid__col--12">
+                                    <div style="color:grey; font-size:12pt"><br>
+<p>
+</div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="footer-site-disclaimer">
+                            <div class="grid">
+                                <div class="grid__col--12">
+                                    <div style="color:grey; font-size:12pt"><br>
+<p>
+<a href="IABS%201-0.pdf">Texas Real Estate Commission Information About Brokerage Services</a>
+<br>
+<a href="https://www.trec.texas.gov/sites/default/files/pdf-forms/CN 1-3.pdf">Texas Real Estate Commission Consumer Protection Notice</a></p></div>
+                                </div>
+                            </div>
+                        </section>
+                            <section class="footer-disclaimer">
+                                <div class="grid">
+
+                                    <div class="grid__col--12">
+                                        <div style="color: grey">
+                                            Copyright © 2021 Houston 
+Realtors Information Service, Inc. All information provided is deemed 
+reliable but is not guaranteed and should be independently verified. IDX
+ information is provided exclusively for consumers’ personal, 
+non-commercial use, that it may not be used for any purpose other than 
+to identify prospective properties consumers may be interested in 
+purchasing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="footer-disclaimer">
+                                <div class="grid">
+
+                                    <div class="grid__col--12">
+                                        <div style="color: grey">
+                                            Our online database includes
+ ALL Dallas-Fort Worth area properties listed with the North Texas MLS. 
+Property data is courtesy of the North Texas Real Estate Information 
+Systems (NTREIS) multiple listing service.
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="footer-disclaimer">
+                                <div class="grid">
+
+                                    <div class="grid__col--12">
+                                        <div style="color: grey">
+                                            Information provided 
+Courtesy of San Antonio Board of Realtors.
+
+IDX information is provided exclusively for consumers'personal, 
+non-commercial use and may not be used for any purpose other than to 
+identify prospective properties consumers may be interested in 
+purchasing. Information is believed to be accurate but not guaranteed. 
+Provided courtesy of the San Antonio Board of Realtors.
+
+Copyright 2021 San Antonio Board of Realtors, All Rights Reserved.
+
+Data last updated: May 20, 2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="footer-disclaimer">
+                                <div class="grid">
+
+                                    <div class="grid__col--12">
+                                        <div style="color: grey">
+                                            Based on information from 
+the Austin Board of REALTORS (alternatively, from ACTRIS) for the period
+ through 2021.® IDX information is provided exclusively for consumers' 
+personal, non-commercial use. It may not be used for any purpose other 
+than to identify prospective properties consumers may be interested in 
+purchasing. All information provided is deemed reliable but is not 
+guaranteed and should be independently verified. The Austin Board of 
+REALTORS®, ACTRIS and their affiliates provide the MLS and all content 
+therein "AS IS" and without any warranty, express or implied. Data last 
+updated: May 20, 2021 Texas law requires all real estate licensees to 
+provide this link to Information About Brokerage 
+Services:www.trec.state.tx.us/pdf/contracts/op-k.pdf
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        <section class="footer-disclaimer">
+                            <div class="grid">
+                            </div>
+                        </section>
+
+            <div class="panel panel-default cinc-chat js-consumer-chat" id="chat-container" style="display:none; position: fixed; padding:0px"></div>
+        </div> 
+    </div>
+
+    <div class="modal">
+    <input aria-label="Accept Terms of Use" class="modal-state" id="acceptterms-modal" type="checkbox">
+    <div class="modal-window non-dismissable">
+        <div class="modal-inner box">
+            <h4>Accept Terms</h4>
+            <p>To continue searching, you must agree to the <a href="https://scottk.centralmetro.com/terms" target="_blank">Terms of Use</a>.</p>
+            <div class="text-center">
+                <button type="button" class="btn--default js-acceptterms-accept" style="width: 100%;">I Agree</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal optin-modal">
+    <input aria-label="Opt-in to Communication" class="modal-state" id="optinimport-modal" type="checkbox">
+    <div class="modal-window">
+        <div class="modal-inner box">
+            <h3>Opt-In</h3>
+            <p>For the best experience, please provide your cell phone number and select accept below to opt-in to our <a href="https://scottk.centralmetro.com/terms" target="_blank">Terms &amp; Conditions</a> and <a href="https://scottk.centralmetro.com/privacy" target="_blank">Privacy Policy</a> to begin receiving text and voice communications.</p>
+            
+            <label>Please enter your cell phone</label>
+            <div class="text-center">
+                <input aria-label="Please enter your cell phone" type="text" name="cellphone" class="form-control">
+            </div>
+            
+            <div class="text-center">
+                <button type="button" class="btn--default js-importoptin-accept" style="width: 100%;">Accept</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal">
+    <input class="modal-state" id="socialshare-modal" type="checkbox" aria-label="Share a Link">
+    <div class="modal-window">
+        <div class="modal-inner box">
+            <label class="modal-close" title="Close Social Share" for="socialshare-modal"></label>
+
+            <h4>Share a Link</h4>
+            <div>
+                
+<div class="grid">
+    <div class="grid__col--12">
+        <a aria-label="Share Property on Facebook" href="#" class="js-share js-facebookproperty facebook"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+        <a aria-label="Share Property on Twitter" href="#" class="js-share js-tweetproperty twitter"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+        <a aria-label="Share Property on Pinterest" href="#" class="js-share js-pinproperty pinterest"><i class="fa fa-pinterest-square fa-3x" aria-hidden="true"></i></a>
+        <a aria-label="Share Property on Google+" href="#" class="js-share js-gplusproperty gplus"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="grid__col--9">
+        <input aria-label="Share via Email Address" class="form-control js-emailaddress" placeholder="share via email address">
+    </div>
+    <div class="grid__col--3">
+        <button class="btn--default js-share js-emailproperty">Send</button>
+    </div>   
+        
+</div>
+            </div>
+
+        </div>
+    </div>
+</div> 
+
+    
+<div class="modal">
+    <input class="modal-state" id="note-modal" type="checkbox" aria-label="Create A Note">
+    <div class="modal-window">
+        <div class="modal-inner box">
+            <label class="modal-close" title="Close Note" for="note-modal"></label>
+
+            <h4>Create a Note</h4>
+            <div>
+                <label>Write a quick note about this property:</label>
+                
+<textarea aria-label="Enter Notes" class="form-control js-notetext" name="notes"></textarea>
+<button class="btn--default js-savenote" data-objdid="" data-objtype="Unknown">Save Note</button>
+
+
+            </div>
+
+        </div>
+    </div>
+</div> <!--END MODAL-->
+
+
+    
+<div class="modal">
+    <input class="modal-state" id="notebooks-modal" type="checkbox" aria-label="Select a Notebook">
+    <div class="modal-window">
+        <div class="modal-inner box">
+            <label class="modal-close" title="Close Notebooks" for="notebooks-modal"></label>
+
+            <h4>Select a Notebook</h4>
+            <div id="notebooksmodal-list">
+            </div>
+            <hr>
+            <h4>or make a new notebook</h4>
+            <input aria-label="Notebook Name" class="form-control js-createnotebookname" placeholder="Notebook name">
+            <button type="submit" class="btn--warning js-createnotebook">Create</button>
+        </div>
+    </div>
+</div> <!--END MODAL-->
+
+<script id="notebooksmodal_tmpl" type="text/x-handlebars">
+    {{#each headers}}
+        <div><a data-organizerdid="{{organizerDID}}" class="js-changenotebook">{{name}}</a></div>
+    {{/each}}
+</script>
+    
+<div class="modal">
+    <input aria-label="Modal is loading" class="modal-state" id="loading-modal" type="checkbox">
+    <div class="modal-window non-dismissable">
+        <div class="modal-inner box">
+            <div class="center"><img src="index_files/Preloader_3.gif" alt="Loading"></div>
+            <br><br>
+            <p class="center lead">Loading...</p>
+            <p class="js-loadingmodaltext center"></p>
+
+        </div>
+    </div>
+</div>
+
+    <div class="modal">
+    <input class="modal-state" id="lead-validcellphone-modal" type="checkbox">
+    <div class="modal-window">
+        <div class="modal-inner box modal-legacy">
+            <label title="Updating improper phone number" class="modal" for="lead-validcellphone-modal"></label>
+            <div class="modal-header">
+                <h4>Looks like your phone is invalid.</h4>
+                <h4>Would you like to update it?</h4>
+            </div>
+            <div class="modal js-cellphone-update">
+<form action="#" class="form-horizontal js-cellphone-submission" method="post" role="form">                    <input aria-label="Cell Phone Number" type="text" class="form-control js-new-cellphone" name="newCellPhone" placeholder="Enter Cell Phone">
+                    <div class="grid__flex--gutter grid__2col">
+                        <div>
+                            <button type="submit" class="btn--default js-update-cellphone" style="width: 100%; margin-bottom:10px">Update</button>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn--neutral js-cancel-cellphone" style="width: 100%; margin-left:-1px; color:black">Cancel</button>
+                        </div>
+                    </div>
+</form>            </div>
+        </div>
+    </div>
+</div> <!--END MODAL-->
+
+
+
+        <script type="text/x-handlebars-template" id="chad-panel">
+    <div class="js-chat-dialog cinc-chat panel panel-default" data-mdid="{{mdid}}">
+        <div class="panel-heading chat-header">
+            <div class="panel-title">{{name}} ({{title}})</div>
+            <span class="panel-toolbar text-right">
+                {{#if isConsumer}}
+                <a class="btn btn-default btn-sm down" data-toggle="panelcollapse"><span class="fa fa-minus"></span></a>
+                {{/if}}
+                <a class="btn btn-default btn-sm js-chad-close"><span class="fa fa-close"></span></a>
+            </span>
+        </div>
+        <div class="panel-collapse pull out cinc-chat-body">
+            <div class="panel-body js-chat-body">
+                <div class="row">
+                    <div class="chat-history">
+                        {{#each chats}}
+                        {{#if receiving}}
+                        <div class="row clearfix">
+                            <div class="message-data align-right" data-cdid="{{cdid}}">
+                                <span class="message-data-time">{{date createDT format='mmm d, yyyy hh:MM tt'}}</span>
+                                <span class="message-data-name">{{fromFirstName}}</span>
+                            </div>
+                            <div class="message other-message float-right">
+                                {{message}}
+                            </div>
+                        </div>
+                        {{else}}
+                        <div class="row">
+                            <div class="message-data" data-cdid="{{cdid}}">
+                                <span class="message-data-name">Me</span>
+                                <span class="message-data-time">{{date createDT format='mmm d, yyyy hh:MM tt'}}</span>
+                                {{#if received}}
+                                <i class="ico-checkmark text-success" aria-hidden="true"></i>
+                                {{/if}}
+                            </div>
+                            <div class="message my-message">
+                                {{message}}
+                            </div>
+                        </div>
+                        {{/if}}
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="chat-message">
+                        <textarea class="js-chad-message" name="message-to-send" placeholder="Type your message" rows="3" data-mdid="{{mdid}}"></textarea>
+                        <button class="btn btn-sm js-chad-send">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/x-handlebars-template" id="chad-sent-message">
+    <div class="row">
+        <div class="message-data" data-cdid="{{cdid}}">
+            <span class="message-data-name">Me</span>
+            <span class="message-data-time">{{date createDT format='mmm d, yyyy hh:MM tt'}}</span>
+        </div>
+        <div class="message my-message">
+            {{message}}
+        </div>
+    </div>
+</script>
+<script type="text/x-handlebars-template" id="chad-received-message">
+    <div class="row clearfix">
+        <div class="message-data align-right" data-cdid="{{cdid}}">
+            <span class="message-data-time">{{date createDT format='mmm d, yyyy hh:MM tt'}}</span>
+            <span class="message-data-name">{{fromName}}</span>
+        </div>
+        <div class="message other-message float-right">
+            {{message}}
+        </div>
+    </div>
+</script>
+    
+
+
+    <script type="text/javascript">
+    
+    if (/PhantomJS/.test(window.navigator.userAgent)) {
+        window.location.href = "http://google.com/#q=phantom%20js";
+    }
+
+    (function() {
+        CINC = (window.CINC || {});
+        CINC.User = {"userDID":"UU7203E458557046D38C01F08E0AF2E1F8","mdid":"MM4355BEC981B24A5D85AE1CD8608F26B2","gkdid":"GK935FB7A89DF0400699A85DC0314480E0","cincsid":"","firstName":"Scott","lastName":"Kotrla","name":"Scott Kotrla","cellPhone":"2148938175","email":"skotrla@yahoo.com","messageSignature":"","domainName":"centralmetro.com","members":[{"mdid":"MM4355BEC981B24A5D85AE1CD8608F26B2","userDID":null,"createDate":"0001-01-01T00:00:00","externalKey":null,"validCellPhone":null,"unsubscribe_Text":false,"domainName":"centralmetro.com","securityLevel":10,"securityLevelAsType":"Agent","flag_OSA":false,"flag_ISA":false,"passwordLastUpdateDT":"0001-01-01T00:00:00","firstName":"Scott","lastName":"Kotrla","fullName":"Scott Kotrla","email":"skotrla@yahoo.com","cellPhone":"2148938175","photoLocation":null,"address":null,"city":null,"state":null,"zip":null,"agentAssigned":"","listingAgentMDID":null,"thirdAssignedMDID":null,"siteID":null,"focusedOrganizerDID":null,"iaFrequency":null,"atCallCenter":false,"status":"Active","subdomainSource":null,"preferredContactMethod":"NoSet","on_ThreadedMessage_Email":true,"on_ThreadedMessage_Push":true,"on_Thread_Push":true,"on_Thread_Email":true,"on_Emails_Push":false,"on_Emails_Email":false,"on_Emails_SMS":false,"on_NewProperty_Push":true,"on_NewProperty_Email":false,"on_NewProperty_SMS":false,"on_Recommendation_Push":true,"on_Recommendation_Email":false,"on_Recommendation_SMS":false,"on_PropertyAlerts":false,"on_PropertyAlerts_AutoDisabled":false,"unsubscribe_Push":false,"buyerLead":false,"sellerLead":false,"emailCC":null,"homePhone":null,"officePhone":null,"recruitLead":null,"gmtOffset":0.0,"medianListingPrice":0,"isTOUPPCompliant":false,"isExternalTOUPPCompliant":false,"lastLogin":"0001-01-01T00:00:00","doNotCall_CellPhone":false,"unsubscribe_AI":null,"favoriteCity":null,"enumLeadAlertCallPhoneType":"Unknown","rowID":0,"createDT":"0001-01-01T00:00:00","modifyDT":"0001-01-01T00:00:00"},{"mdid":"MM9A605A9CA6044D9F8487142E8C63AEAC","userDID":null,"createDate":"0001-01-01T00:00:00","externalKey":null,"validCellPhone":null,"unsubscribe_Text":false,"domainName":"centralmetro.com","securityLevel":5,"securityLevelAsType":"Homeseeker","flag_OSA":false,"flag_ISA":false,"passwordLastUpdateDT":"0001-01-01T00:00:00","firstName":"Scott","lastName":"Kotrla","fullName":"Scott Kotrla","email":"skotrla11@yahoo.com","cellPhone":"2148938175","photoLocation":null,"address":null,"city":null,"state":null,"zip":null,"agentAssigned":"MMB934740FE5F24B01919936D10CC24182","listingAgentMDID":null,"thirdAssignedMDID":null,"siteID":null,"focusedOrganizerDID":null,"iaFrequency":null,"atCallCenter":false,"status":"Active","subdomainSource":null,"preferredContactMethod":"NoSet","on_ThreadedMessage_Email":true,"on_ThreadedMessage_Push":true,"on_Thread_Push":true,"on_Thread_Email":true,"on_Emails_Push":false,"on_Emails_Email":false,"on_Emails_SMS":false,"on_NewProperty_Push":true,"on_NewProperty_Email":false,"on_NewProperty_SMS":false,"on_Recommendation_Push":true,"on_Recommendation_Email":false,"on_Recommendation_SMS":false,"on_PropertyAlerts":false,"on_PropertyAlerts_AutoDisabled":false,"unsubscribe_Push":false,"buyerLead":false,"sellerLead":false,"emailCC":null,"homePhone":null,"officePhone":null,"recruitLead":null,"gmtOffset":0.0,"medianListingPrice":0,"isTOUPPCompliant":false,"isExternalTOUPPCompliant":false,"lastLogin":"0001-01-01T00:00:00","doNotCall_CellPhone":false,"unsubscribe_AI":null,"favoriteCity":null,"enumLeadAlertCallPhoneType":"Unknown","rowID":0,"createDT":"0001-01-01T00:00:00","modifyDT":"0001-01-01T00:00:00"}],"photoLocation":"https://s-static.cinccdn.com/images/uploads/uploads/UP3B1D57E1EAB243.JPG","securityLevel":10,"securityLevelAsType":"Agent","count_Login":2,"validCellPhone":"True","focusedOrganizerDID":"ORGA0873CD0EDE84F56A26A9CBF93772130","favoriteCity":"","onDialer":false,"onCincChat":true,"onMojo":false,"onDotloop":false,"user_IsTeamLeader":false,"showDetailedSupportTeamInfo":false,"lastProductUpdateClick":"2011-01-01T00:00:00","user_IsListingAgent":false,"user_CanManageLandingPages":true,"user_CanAssignLeads":false,"user_CanAssignFromPond":false,"user_CanEditLabels":false,"user_CanEditNotes":true,"user_CanSeeAgentNotes":true,"user_EnableBlog":false,"user_IsImport":false,"user_UnsubscribeText":false,"user_Import_OptedIn":false,"featureProperties":false,"dashboardUrl":"/dashboard/spa#leads","subdomain":"scottk","showCincSurvey":false,"contributorPermissions":2147483647,"contributorRole":"Lead","preferredContactMethod":"NoSet","bestShortName":"Scott","gmailOnboardModalShown":false,"googleEULAAccepted":false,"googleCalendarEnabled":false,"gmailEnabled":false,"gmailAddress":null,"becomeActive":false,"mlsAgentSettings":null,"rolledUpAccessPermissions":{"mdid":"MM4355BEC981B24A5D85AE1CD8608F26B2","admin":false,"canViewRollup":false,"permAdmin":false,"firstName":null,"lastName":null,"regionID":null,"domainName":null},"realSecurityLevel":0,"realMDID":null,"contact":{"isBuyerAgent":true,"isListingAgent":false,"isPartnerAgent":false,"isTeamLead":false,"isActive":true,"contactId":238820,"contactGUID":"CT23E50474D0C14206B2684BB06C77F9EF","ddid":"DN488A0183B4CC4E51B44CA201FDF51935","firstName":"Scott","lastName":"Kotrla","cellPhone":"214-893-8175","homePhone":"","workPhone":"","faxPhone":"","streetAddress":"","stateCode":"","zipCode":"","companyName":"Central Metro Realty","email":"skotrla@yahoo.com","status":"Active","canSendUnsolicitedEmail":false,"canSendUnsolicitedTexts":false,"hasValidEmail":false,"hasValidPhone":false,"rowID":238820,"createDT":"2021-05-17T13:52:56.87","modifyDT":"2021-05-17T13:53:29.48"},"isTOUPPCompliant":false,"defaultCallMethod":"","useTwilioCallerId":false,"defaultAnswerMachineAudio":"","agreedToTermsOfUseAndPrivacyPolicy":false,"agreedUponTermsOfUseAndPrivacyPolicyVersion":null,"canGenerateVideoAds":false,"perm_BehavioralCommunications":true,"eventCalendars":null,"showPartialLeadsDefault":false,"perm_AgentPronto":false,"perm_Plips":true,"perm_VideoMessaging":false,"user_IsFishPond":false,"perm_EditSource":false,"onLeadAlertCall":false,"smtpEmail":null,"smtpIsDefault":false,"aiEnabledForBehavioralComms":false,"aiEnabledForNewLeads":false,"userPermissions":{"permissionList":[],"isPermissionAdmin":false,"isSiteGroupAdmin":false,"isSiteToggleAdmin":false,"canUseDataExplorer":false,"canUseApiExplorer":false,"canExecuteAdHocCommand":false,"canUseLaunchTools":false,"canUseCecTools":false,"canSubscribeImportToText":false,"canUseDevTools":false,"isCommandCenterAdmin":false,"canUseTechXTools":false,"isPlipLibraryAdmin":false},"lenderLead":{"lenderLeadId":0,"mdid":null,"bannerClickCount":0,"isLongFormCompleted":true,"isMortgageLead":false,"internalSourceId":"None","rowID":0,"createDT":"0001-01-01T00:00:00","modifyDT":"0001-01-01T00:00:00"},"onCorefactEnabled":false,"agentPondAssignments":[]};
+        CINC.Site = {"DefaultStrCrit":"","On_SoldPropertyData":false,"On_PdqListSearch":true,"ReassignMinutes":1,"ReassignStartHour":0,"ReassignEndHour":0,"On_LeadAlertCall":true,"LeadAlertCallStartHour":1,"LeadAlertCallEndHour":2,"LR_AgentOverflow":"","HonorDripCategory":true,"GooglePPCName":"Jason Huval - centralmetro.com","On_InfusionSoft":false,"On_FishPond":true,"On_CincChat":true,"On_BrokermintIntegration":false,"On_Corefact":false,"On_HasSingleLineDialer":true,"On_TeamCalendar":true,"UsesMegaDashboard":false,"GMTOffset":-6.0,"On_SubdomainShare":true,"On_ShareAgentRouting":true,"CSA":null,"SiteName":"Central Metro Realty","CompanyName":"","CompanyLogoUrl":"https://s-static.cinccdn.com/images/header/UPB529C62E333547.png","On_SingleAgentSite":false,"On_LiteSite":false,"ReassignEnabled":false,"Status":"Active","TeamVerbiage":"Team","PromptPages":1,"PromptViews":0,"PromptLevel":2,"On_DevilStepThree":true,"ContactName":"Jason Huval","ContactEmail":"","ContactPhone":"512-921-7537","ContactAddress":"13497 N Hwy 183, Ste 700, Austin, TX 78750","State":"TX","Country":"US","StartLat":30.267153,"StartLong":-97.743061,"StateDisclaimer":"\u003cbr\u003e\n\u003cp\u003e\n\u003ca href=\"http://s-static.cinccdn.com/images/uploads/UP6432631630F041.pdf\"\u003eTexas Real Estate Commission Information About Brokerage Services\u003c/a\u003e\n\u003cbr\u003e\n\u003ca href=\"https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-3.pdf\"\u003eTexas Real Estate Commission Consumer Protection Notice\u003c/a\u003e","Social":[{"Name":"Facebook","Url":"http://bit.ly/CMRFacebook"},{"Name":"LinkedIn","Url":"http://bit.ly/CMRLinkedIn"},{"Name":"Pinterest","Url":"http://bit.ly/CMRPins"},{"Name":"Twitter","Url":"http://bit.ly/CMRTwitter"},{"Name":"Instagram","Url":"http://bit.ly/CMRInstagram"},{"Name":"Youtube","Url":"http://bit.ly/CMRYoutube"}],"IsSslEnabled":false,"ProductType":"Pro","IsBrandedSite":false,"IsBrandedSlaveSite":false,"On_ShowDaysOnSite":true,"ExtraSearchStrCrit":"","SearchRequiresAccept":false,"PdqSortBy":"","On_LandingPages":true,"On_MultiLineNav":false,"On_SellerSuite":true,"On_Blog":true,"On_Plans":true,"On_CustomPages":true,"ConversionTrackingScripts":"\u003c!--Event snippet for Lead conversion page--\u003e\r\n                                \u003cscript\u003e\r\n                                    gtag(\u0027event\u0027, \u0027conversion\u0027, {\r\n                                    \u0027send_to\u0027: \u0027AW-688367397/llj0CL_ky7YBEKXOnsgC\u0027\r\n                                });\r\n                                \u003c/script\u003e\r\n                \u003cscript\u003e\r\n                    CINC = (typeof CINC === \u0027undefined\u0027 ? {} : CINC);\r\n                    if (CINC \u0026\u0026 CINC.Facebook \u0026\u0026 CINC.Facebook.Conversion) {\r\n                        CINC.Facebook.Conversion();\r\n                    }\r\n                \u003c/script\u003e","PrimaryMDID":"MMVLZZZTYJ0XK5RY","On_FirstOption":false,"On_CRMPlusChat":true,"On_WhiteLabel":false,"IsEnterprise":false,"MasterSite":null,"SiteDataSettings":{"DDID":"DN488A0183B4CC4E51B44CA201FDF51935","BrokermintAPIKey":"","BrokermintAccountId":0,"On_CrmPlusOnly":true,"CustomEmailDisclaimer":"","IsEnterpriseMaster":false,"PropertyAlertPool":"","On_MojoEnabled":false,"On_RolledUpDashboard":false,"On_VideoGeneration":false,"InstagramUrl":"http://bit.ly/CMRInstagram","YoutubeUrl":"http://bit.ly/CMRYoutube","HomeVideoDID":"UP1F85C62AFC0744","On_CrmConnectSubscribeToText":false,"IsSslEnabled":false,"CorefactEnabled":false,"CorefactOfficeId":2295,"IsLenderRegionSubdomain":false,"VelocifyLeadFilter":"","IsEnterpriseAgentSubdomain":false,"IsEnterpriseRegionSubdomain":false,"EnterpriseAgent":null,"EnterpriseRegion":null,"AgentEnterpriseRegions":null,"IsSmallTeamProduct":false,"IsEnterpriseCRMProduct":false,"MaxAgents":0,"MasterPondMDID":"","On_HasSingleLineDialer":true,"VideoLogoDID":"","AgentProntoEnabled":false,"CobrandBannerLink":"","CobrandBannerImageDID":"","VideoSubscription":1,"JornayaCampaignID":"","MassWelcomeEmailSentDT":null,"MassWelcomeEmailSentByMDID":"","Copyright":"","SplashPagePartnerMDID":"","IsAIEnabled":false,"StateDisclaimer":"\u003cbr\u003e\n\u003cp\u003e\n\u003ca href=\"http://s-static.cinccdn.com/images/uploads/UP6432631630F041.pdf\"\u003eTexas Real Estate Commission Information About Brokerage Services\u003c/a\u003e\n\u003cbr\u003e\n\u003ca href=\"https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-3.pdf\"\u003eTexas Real Estate Commission Consumer Protection Notice\u003c/a\u003e","RowID":655,"CreateDT":"0001-01-01T00:00:00","ModifyDT":"0001-01-01T00:00:00"},"IsLenderSite":false,"TemporaryToggles":["sendpropalertsatpeakemailusagetime","sendpropalertsthroughsendengine","VirtualOpenHouses"],"Registration_AllowPartialName":false,"Registration_SocialWithoutPhone":false,"DDID":"DN488A0183B4CC4E51B44CA201FDF51935","DomainName":"centralmetro.com","DomainGroupDID":""};
+        CINC.InDev = false;
+        CINC.InStaging = false;
+        CINC.ControllerName = "Home";
+        CINC.ActionName = "Index";
+        CINC.QS = "[]";
+        CINC.ServerUTCOffset = -5;
+        CINC.CincProduct = "Pro";
+        CINC.CincFeatures =  {"buyerDashboard":true,"agentLaunchpad":true,"brokerLaunchpad":true,"rolledupAnalytics":true,"listingDashboard":true,"contactManagement":true,"exportLeads":true,"importLeads":true,"dialer":true,"basicLeadRouting":true,"advancedLeadRouting":true,"remarketing":true,"plans":true,"drips":true,"editDrips":true,"communication":true,"calendar":true,"propertiesPage":true,"listingVideos":true,"textResponder":true,"craigslist":true,"openHouses":true,"landingPages":true,"editLandingPages":true,"blogs":true,"customPages":true,"sellerSuite":true,"crmConnect":true,"googleIntegration":true,"zapier":true,"zillowIntegration":true,"skySlopeIntegration":true,"corefactIntegration":true,"brokermintIntegration":true,"dotLoopIntegration":true,"bombBombSettings":true,"mooveGuruIntegration":true,"mojoIntegration":true,"infusionsoftIntegration":true,"customPipelines":true,"behavioralCommunications":true,"zillowMortgageIntegration":true,"themeOptions":true,"prolincIntegration":true,"dashboardShowConsumerActivity":true,"plips":true,"createPlips":true,"editPlips":true,"brandedSites":true,"customLabels":true,"agentLimit":true,"partnerLimit":true,"pondLimit":true};
+        CINC.Site.Registration_SocialWithoutPhone = false;
+        CINC.CRMSettings = {"MMSBulkSendCap":25};
+        CINC.GoogleStaticMapKey = "AIzaSyDevKH0RCSw8-1t4jGsv1J_YjsAiTNyWK4";
+        CINC.Castle = {};
+        CINC.Castle.Key = "AqnLK07beN4S6cnVbgzjK1yJwA7PmLWB2ptG2R4x";
+        CINC.Castle.PageGetReqest = "https://qa.castle.cincapi.com/api/page";
+        CINC.Castle.PagePostRequest = "https://qa.castle.cincapi.com/api/page";
+        CINC.Castle.PagePutRequest = "https://qa.castle.cincapi.com/api/page";
+
+            
+        $(CINC).trigger('loaded');
+    }());
+    </script>
+
+    <script type="text/javascript" src="index_files/hubs"></script>
+<script type="text/javascript" src="index_files/Pro-js" defer="defer"></script>
+
+<script type="text/javascript" src="index_files/prototypes"></script>
+
+
+<script type="text/javascript">
+    (function () {
+        CINC.Verbiage = {
+            Define: function (word, value) {
+                var key = word.toLowerCase().replace(/\s+/g, '');
+                CINC.Verbiage[key] = value;
+            },
+            Get: function (word) {
+                var key = word.toLowerCase().replace(/\s+/g, '');
+                return CINC.Verbiage[key] || word.toProperCase();
+            }
+        };
+
+        CINC.Verbiage.Define("agent");
+        CINC.Verbiage.Define("listingagent", "Listing Agent");
+        CINC.Verbiage.Define("partner");
+        CINC.Verbiage.Define("broker");
+
+        if (CINC.CincProduct === 'Lender') {
+            CINC.Verbiage.Define("partner", "Loan Officer");
+            CINC.Verbiage.Define("broker", "Branch Manager");
+        }
+    }());
+</script>
+
+
+    <script>
+        var receptiveAppSettings = {
+            "signature": "",
+            "return_url": "http://centralmetro.com",
+            "timestamp": "5/20/2021 6:15:15 AM",
+            "account": {
+                "id": "AVLZZZ4X5QV683R",
+                "name": "",
+                "monthly_value": "0",
+                "is_paying": "true"
+            },
+            "vendor": {
+                "id": "4c71478d-a3f9-4b60-8de5-c6456284636c"
+            },
+            "user": {
+                "id": "MM4355BEC981B24A5D85AE1CD8608F26B2",
+                "email": "skotrla@yahoo.com",
+                "full_name": "Scott Kotrla"
+            }
+        };
+    </script>
+    <script>
+        (function () {
+            function async_load() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript'; s.async = true;
+                s.src = '../receptive.io/js/widget/widget.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            if (window.attachEvent) {
+                window.attachEvent('onload', async_load);
+            } else {
+                window.addEventListener('load', async_load, false);
+            }
+        })();
+    </script>
+
+
+
+
+    
+    <!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 688367397;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="index_files/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/688367397/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="index_files/js_004"></script></body>
+<!-- Mirrored from www.kotrlas.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Jul 2021 22:32:26 GMT -->
+</html>
